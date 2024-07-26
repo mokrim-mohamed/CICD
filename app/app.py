@@ -30,7 +30,7 @@ def subtract_route():
     data = request.get_json()
     try:
         a = int(data['a'])  # Convertir en entier
-        b = int(data['b'])  # Convertir en entier
+        b = int(data['b'])  
         result = subtract(a, b)
         return jsonify({'result': result}), 200
     except KeyError:
