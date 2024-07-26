@@ -15,29 +15,28 @@ def subtract(a, b):
 def add_route():
     data = request.get_json()
     try:
-        a = data['a']
-        b = data['b']
+        a = int(data['a'])  # Convertir en entier
+        b = int(data['b'])  # Convertir en entier
         result = add(a, b)
         return jsonify({'result': result}), 200
     except KeyError:
         return jsonify({'error': 'Missing parameters'}), 400
-    except TypeError:
+    except ValueError:
         return jsonify({'error': 'Invalid input types'}), 400
-@app.route('/', methods=['POST'])
 
 # Route pour soustraire
 @app.route('/subtract', methods=['POST'])
 def subtract_route():
     data = request.get_json()
     try:
-        a = data['a']
-        b = data['b']
+        a = int(data['a'])  # Convertir en entier
+        b = int(data['b'])  # Convertir en entier
         result = subtract(a, b)
         return jsonify({'result': result}), 200
     except KeyError:
         return jsonify({'error': 'Missing parameters'}), 400
-    except TypeError:
+    except ValueError:
         return jsonify({'error': 'Invalid input types'}), 400
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
