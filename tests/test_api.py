@@ -4,7 +4,7 @@ import sys
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../app')))
 
 
-from app import add, subtract  # noqa: E402
+from app import add, subtract,authenticate  # noqa: E402
 
 
 def test_add():
@@ -18,3 +18,10 @@ def test_subtract():
     assert subtract(5, 3) == 2
     assert subtract(-1, -1) == 0
     assert subtract(0, 0) == 0
+def test_authenticate_success():
+    # Test authentication success
+    assert authenticate('mokrim', '0000') == 'Connected'
+def test_authenticate_failure():
+    # Test authentication failure with incorrect username
+    assert authenticate('user1', 'wrongpassword') == 'Incorrect username or password'
+    

@@ -1,0 +1,74 @@
+2024-07-26 18:31:36,921 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-07-26 18:31:36,925 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-07-26 18:31:47,090 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-07-26 18:31:47,092 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-07-26 18:31:58,072 - root - INFO - Subtraction request: a=2, b=3, result=-1
+2024-07-26 18:31:58,074 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2024 18:31:58] "POST /subtract HTTP/1.1" 200 -
+2024-07-26 19:00:12,639 - root - INFO - Subtraction request: a=2, b=3, result=-1
+2024-07-26 19:00:12,666 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2024 19:00:12] "POST /subtract HTTP/1.1" 200 -
+2024-07-26 19:00:17,538 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2024 19:00:17] "[33mPOST / HTTP/1.1[0m" 404 -
+2024-07-26 19:04:00,915 - root - INFO - Subtraction request: a=2, b=3, result=-1
+2024-07-26 19:04:00,933 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2024 19:04:00] "POST /subtract HTTP/1.1" 200 -
+2024-07-26 19:14:27,654 - root - INFO - Subtraction request: a=2, b=3, result=-1
+2024-07-26 19:14:27,680 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2024 19:14:27] "POST /subtract HTTP/1.1" 200 -
+2024-07-26 19:17:16,541 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2024 19:17:16] "[31m[1mPOST /subtract HTTP/1.1[0m" 400 -
+2024-07-26 19:17:55,864 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2024 19:17:55] "[33mPOST / HTTP/1.1[0m" 404 -
+2024-07-26 19:22:25,174 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2024 19:22:25] "[33mPOST /hh HTTP/1.1[0m" 404 -
+2024-07-26 19:38:53,703 - root - INFO - Subtraction request: a=2, b=3, result=-1
+2024-07-26 19:38:53,728 - werkzeug - INFO - 127.0.0.1 - - [26/Jul/2024 19:38:53] "POST /subtract HTTP/1.1" 200 -
+2024-07-27 12:14:03,856 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-07-27 12:14:03,863 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-07-27 12:14:15,370 - root - INFO - Subtraction request: a=2, b=3, result=-1
+2024-07-27 12:14:15,374 - werkzeug - INFO - 127.0.0.1 - - [27/Jul/2024 12:14:15] "POST /subtract HTTP/1.1" 200 -
+2024-07-27 12:15:07,252 - root - ERROR - Missing username or password
+2024-07-27 12:15:07,254 - werkzeug - INFO - 127.0.0.1 - - [27/Jul/2024 12:15:07] "[31m[1mPOST /auth HTTP/1.1[0m" 400 -
+2024-07-27 12:15:18,345 - root - INFO - User authenticated: mokrim
+2024-07-27 12:15:18,346 - werkzeug - INFO - 127.0.0.1 - - [27/Jul/2024 12:15:18] "POST /auth HTTP/1.1" 200 -
+2024-07-27 12:16:25,374 - root - ERROR - Authentication failed for user: mokrim
+2024-07-27 12:16:25,376 - werkzeug - INFO - 127.0.0.1 - - [27/Jul/2024 12:16:25] "[31m[1mPOST /auth HTTP/1.1[0m" 401 -
+2024-07-27 12:17:11,842 - root - INFO - Subtraction request: a=3, b=1, result=2
+2024-07-27 12:17:11,843 - werkzeug - INFO - 127.0.0.1 - - [27/Jul/2024 12:17:11] "POST /subtract HTTP/1.1" 200 -
+2024-07-27 12:17:41,210 - root - INFO - Addition request: a=3, b=1, result=4
+2024-07-27 12:17:41,211 - werkzeug - INFO - 127.0.0.1 - - [27/Jul/2024 12:17:41] "POST /add HTTP/1.1" 200 -
+2024-07-27 12:32:47,304 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-07-27 12:32:47,307 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-07-27 12:33:30,226 - app - ERROR - Exception on /auth [POST]
+Traceback (most recent call last):
+  File "C:\Users\HP Elitebook 840 G5\anaconda3\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\HP Elitebook 840 G5\anaconda3\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\HP Elitebook 840 G5\anaconda3\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\HP Elitebook 840 G5\anaconda3\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "app/app.py", line 48, in auth_route
+    logging.info(f"result={result}")
+NameError: name 'result' is not defined
+2024-07-27 12:33:30,236 - werkzeug - INFO - 127.0.0.1 - - [27/Jul/2024 12:33:30] "[35m[1mPOST /auth HTTP/1.1[0m" 500 -
+2024-07-27 12:34:51,326 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-07-27 12:34:51,328 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-07-27 12:34:57,067 - app - ERROR - Exception on /auth [POST]
+Traceback (most recent call last):
+  File "C:\Users\HP Elitebook 840 G5\anaconda3\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\HP Elitebook 840 G5\anaconda3\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\HP Elitebook 840 G5\anaconda3\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\HP Elitebook 840 G5\anaconda3\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "app/app.py", line 48, in auth_route
+    logging.info(f"result={result}")
+NameError: name 'result' is not defined
+2024-07-27 12:34:57,080 - werkzeug - INFO - 127.0.0.1 - - [27/Jul/2024 12:34:57] "[35m[1mPOST /auth HTTP/1.1[0m" 500 -
+2024-07-27 12:35:27,100 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-07-27 12:35:27,102 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-07-27 12:35:29,939 - root - INFO - result=Connected
+2024-07-27 12:35:29,941 - werkzeug - INFO - 127.0.0.1 - - [27/Jul/2024 12:35:29] "POST /auth HTTP/1.1" 200 -
